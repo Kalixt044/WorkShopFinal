@@ -1,11 +1,12 @@
+import Hero from '../../components/Hero'
 import './styles.sass'
 
 
 const Home = () => {
   return (
-    <div>
-      Home
-    </div>
+    <section>
+      <Hero />
+    </section>
   )
 }
 
