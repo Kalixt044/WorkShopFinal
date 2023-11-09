@@ -25,7 +25,23 @@ const Header = () => {
         <HiMenuAlt3 />
       </button>
     </header>
-    <header className='header desktop'></header>
+    <header className='header desktop'>
+      <div className='header__logo-container flex'>
+        <h3 className='header__logo-container--title'>Trabook</h3>
+        <img className='header__logo-container--image' src={logo} alt='logo icon' />
+      </div>
+      <ul className='navigation-desktop flex'>
+        <li className='navigation-desktop__item'>Home</li>
+        <li className='navigation-desktop__item'>About</li>
+        <li className='navigation-desktop__item'>Destination</li>
+        <li className='navigation-desktop__item'>Tour</li>
+        <li className='navigation-desktop__item'>Blog</li>
+      </ul>
+      <div className='action-desktop'>
+        <button className='action-desktop__button login'>Login</button>
+        <button className='action-desktop__button sign-up'>Sign up</button>
+      </div>
+    </header>
     <Drawer placement="right" onClose={onClose} open={open}>
       <div className='navigation'>
         <p>Home</p>
