@@ -1,0 +1,30 @@
+@use 'variables' as *
+  
+@mixin titleStyle
+  text-align: center
+  font-size: 4.8rem
+  font-weight: $bold-weight
+  span
+    color: $secondary-color-orange
+
+@mixin textStyle
+  display: block
+  width: 430px
+  margin: 0 auto
+  text-align: center
+  font-family: $font-source-2
+  font-size: 1.8rem
+  font-weight: $regular-weight
+  color: $paragraph-color
+
+@mixin infoWrapper($width, $img-w, $img-h, $right)
+  width: $width
+  margin: 0 auto
+  position: relative
+  img
+    width: $img-w
+    height: $img-h
+    object-fit: contain
+    position: absolute
+    right: $right
+
