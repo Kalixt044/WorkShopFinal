@@ -61,6 +61,30 @@ const Footer = () => {
       <section className='footer__info'>
         <Collapse items={items} defaultActiveKey={['1']} />
       </section>
+      <section className='footer__info-desktop'>
+        <ul className='footer-list-desk'>
+          <h3 className='footer-list-desk__title'>Company</h3>
+          <li className='footer-list-desk__item'>About</li>
+          <li className='footer-list-desk__item'>Carrers</li>
+          <li className='footer-list-desk__item'>Logistic</li>
+          <li className='footer-list-desk__item'>Privacy & Policy</li>
+        </ul>
+        <ul className='footer-list-desk'>
+          <h3 className='footer-list-desk__title'>Contact</h3>
+          <li className='footer-list-desk__item'>Help/FAQ</li>
+          <li className='footer-list-desk__item'>Press</li>
+          <li className='footer-list-desk__item'>Affilates</li>
+        </ul>
+        <ul className='footer-list-desk'>
+          <h3 className='footer-list-desk__title'>More</h3>
+          <li className='footer-list-desk__item'>Press Centre</li>
+          <li className='footer-list-desk__item'>Our Blog</li>
+          <li className='footer-list-desk__item'>Low fare tips</li>
+        </ul>
+      </section>
+      <section className='footer__divider-desktop'>
+        <Divider />
+      </section>
       <section className='footer__terms'>
         <p className='footer__terms--text'>Copyright, Trabook 2022. All rights reserved.</p>
         <p className='footer__terms--text'>Terms & Conditions</p>
