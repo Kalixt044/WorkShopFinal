@@ -8,6 +8,8 @@ import lineOrange from '../../assets/icons/orange.svg'
 import lineBlue from '../../assets/icons/blue.svg'
 import lineYellow from '../../assets/icons//yellow.svg'
 import './styles.sass'
+import Deals from '../../components/Deals'
+import DealCard from '../../components/DealCard'
 
 const thingsToDoList = [
   {
@@ -41,6 +43,12 @@ const Home = () => {
           ))
         }
       </ThingsToDo>
+      <Deals>
+        <DealCard />
+        <DealCard />
+        <DealCard />
+        <DealCard />
+      </Deals>
     </section>
   )
 }

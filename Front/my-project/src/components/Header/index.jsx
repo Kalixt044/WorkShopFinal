@@ -26,7 +26,7 @@ const Header = () => {
       </button>
     </header>
     <header className='header desktop'>
-      <div className='header__logo-container flex'>
+      <div className='header__logo-container flex justify-start'>
         <h3 className='header__logo-container--title'>Trabook</h3>
         <img className='header__logo-container--image' src={logo} alt='logo icon' />
       </div>
