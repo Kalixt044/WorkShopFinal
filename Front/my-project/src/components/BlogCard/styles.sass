@@ -1,0 +1,42 @@
+@use '../../styles/_variables' as *
+@use '../../styles/_mixins' as *
+
+.blog-card
+  width: 170px
+  height: 200px
+  border-radius: 8px
+  &__image
+    width: 100%
+    height: 150px
+    object-fit: cover
+    border-radius: 8px
+    @media (min-width: $tablet-width)
+      height: 270px
+  &__body
+    width: 100%
+    height: 50px
+    font-family: $font-source-2
+    display: grid
+    gap: 7px
+    align-items: center
+    align-content: center
+    &--title
+      font-size: 0.9rem
+      font-weight: $medium-weight
+      color: $primary-color-black
+      @media (min-width: $tablet-width)
+        font-size: 1.8rem
+        list-style: 26px
+    &--text
+      font-size: 0.7rem
+      font-weight: $regular-weight
+      color: $paragraph-color
+      @media (min-width: $tablet-width)
+        font-size: 1.6rem
+    @media (min-width: $tablet-width)
+      height: 111px
+      padding: 10px 0
+      align-content: space-between
+  @media (min-width: $tablet-width)
+    width: 270px
+    height: 381px

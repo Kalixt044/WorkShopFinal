@@ -1,0 +1,32 @@
+@use '../../styles/_variables' as *
+@use '../../styles/_mixins' as *
+
+.vacation
+  width: 100%
+  height: auto
+  display: grid
+  margin: 20px
+  .info-wrapper 
+    @include infoWrapper(480px, 85px, 85px, -25px, -40px)
+    @media (min-width: $tablet-width)
+      @include infoWrapper(570px, 130px, 130px, -50px, -10px)
+  .wrapper
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    gap: 20px
+    margin-top: 20px
+    padding: 0 20px
+  &__title
+    @include titleStyle
+  &__text
+    @include textStyle
+  &__gallery-container
+    width: 100%
+    height: auto
+    margin: 20px 0
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    gap: 20px
