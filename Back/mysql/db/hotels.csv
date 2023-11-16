@@ -1,11 +1,30 @@
-ID,Nombre,Star,Precio,Tel,Website,Pais,Ciudad,Direccion					
-1,Hotel Plaza Marino,4,150,555-1234,www.hotelplaza.com,Argentina,Buenos Aires,Av. Principal 123					
-2,Grand Hotel,5,250,555-5678,www.grandhotel.com,Brasil,Rio de Janeiro,Rua Principal 456					
-3,Sunset Resort,4,200,555-9012,www.sunsetresort.com,España,Barcelona,Calle Principal 789					
-4,Luxury Inn,5,300,555-3456,www.luxuryinn.com,Francia,París,Rue Principale 1011					
-5,Seaside Lodge,3,120,555-7890,www.seasidelodge.com,Italia,Roma,Via Principale 1213					
-6,Majestic Hotel,4,180,555-2345,www.majestichotel.com,México,Ciudad de México,Av. Principal 1415					
-7,Royal Retreat,5,280,555-6789,www.royalretreat.com,Estados Unidos,Nueva York,Main Street 1617					
-8,Mountain View Hotel,3,110,555-0123,www.mountainviewhotel.com,Canadá,Toronto,Street Principal 1819					
-9,Golden Sands Resort,4,220,555-4567,www.goldensandsresort.com,Australia,Sídney,Main Road 2021					
-10,Palm Oasis Hotel,3,130,555-8901,www.palmoasishotel.com,Egipto,Cairo,Main Avenue 2223					
+ID_Hotel,Name,Stars,Price,Tel,WebSide,ID_City,Address,AvailableRooms
+1,Hotel Plaza,4,150,555-1234,www.hotelplaza.com,1,Av. Principal, 223,
+2,Grand Hotel,5,250,555-5678,www.grandhotel.com,2,Rua Principal, 356,
+3,Sunset Resort,4,200,555-9012,www.sunsetresort.com,3,Calle Principal, 389,
+4,Luxury Inn,5,300,555-3456,www.luxuryinn.com,4,Rue Principale, 111,
+5,Seaside Lodge,3,120,555-7890,www.seasidelodge.com,5,Via Principale, 123,
+6,Majestic Hotel,4,180,555-2345,www.majestichotel.com,6,Av. Principal, 115,
+7,Royal Retreat,5,280,555-6789,www.royalretreat.com,7,Main Street, 117,
+8,Mountain View Hotel,3,110,555-0123,www.mountainviewhotel.com,8,Street Principal, 219,
+9,Golden Sands Resort,4,220,555-4567,www.goldensandsresort.com,9,Main Road, 221,
+11,Maravilla Suites,4,180,555-1111,www.maravillasuites.com,1,Av. del Sol 456,50
+12,Rio Palace Hotel,5,300,555-2222,www.riopalace.com,2,Av. das Palmeiras 789,30
+13,Barcelona Grand,4,220,555-3333,www.barcelonagrand.com,3,Carrer Principal 1011,40
+14,Parisian Elegance,5,400,555-4444,www.parisianelegance.com,4,Avenue Principale 1213,20
+15,Roma Bliss Hotel,3,150,555-5555,www.romabliss.com,5,Via della Rosa 1415,60
+16,Mexico City Retreat,4,250,555-6666,www.mexicocityretreat.com,6,Av. de la Luna 1617,35
+17,New York Heights,5,350,555-7777,www.nyheights.com,7,Main Avenue 1819,25
+18,Toronto Lakeside Inn,3,120,555-8888,www.torontolakesideinn.com,8,Lakeview Street 2021,70
+19,Sydney Harborview Hotel,4,200,555-9999,www.sydneyharborview.com,9,Harbor Road 2223,45
+20,Cairo Oasis Resort,3,130,555-0000,www.cairooasis.com,10,Oasis Street 2425,55
+21,Solstice Suites,4,180,555-1111,www.solsticesuites.com,1,Av. del Sol 456,50
+22,Copacabana Paradise,5,300,555-2222,www.copacabanaparadise.com,2,Av. das Palmeiras 789,30
+23,Sagrada Familia Residences,4,220,555-3333,www.sagradafamiliaresidences.com,3,Carrer Principal 1011,40
+24,Louvre Grand Hotel,5,400,555-4444,www.louvregrand.com,4,Avenue Principale 1213,20
+25,Fontana di Trevi Suites,3,150,555-5555,www.fontanaditrevisuites.com,5,Via della Rosa 1415,60
+26,Azteca Heritage Hotel,4,250,555-6666,www.aztecaheritage.com,6,Av. de la Luna 1617,35
+27,Central Park Elegance,5,350,555-7777,www.centralparkelegance.com,7,Main Avenue 1819,25
+28,Niagara Falls Retreat,3,120,555-8888,www.niagarafallsretreat.com,8,Lakeview Street 2021,70
+29,Opera House View Hotel,4,200,555-9999,www.operahouseview.com,9,Harbor Road 2223,45
+30,Giza Pyramid Resort,3,130,555-0000,www.gizapyramidresort.com,10,Oasis Street 2425,55

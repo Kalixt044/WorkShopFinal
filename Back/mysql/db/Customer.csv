@@ -1,0 +1,12 @@
+ID_Customer,Name,LastName,Email,Tel,ID_City
+1,Juan,García,Martínez,juan@gmail.com,555-1234,1
+2,María,Rodríguez,Pérez,maria@gmail.com,555-5678,2
+3,Carlos,Fernández,López,carlos@gmail.com,555-9012,3
+4,Sofía,Díaz,González,sofia@gmail.com,555-3456,4
+5,Pablo,Martínez,Ramírez,pablo@gmail.com,555-7890,5
+6,Ana,López,Hernández,ana@gmail.com,555-2345,6
+7,Luis,Pérez,Sánchez,luis@gmail.com,555-6789,7
+8,Andrea,Sánchez,Fernández,andrea@gmail.com,555-0123,8
+9,Javier,González,Díaz,javier@gmail.com,555-4567,9
+10,Laura,Ramírez,Martínez,laura@gmail.com,555-8901,10
+
