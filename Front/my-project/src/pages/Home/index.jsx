@@ -14,6 +14,7 @@ import blogImage2 from '../../assets/images/blog2.svg'
 import blogImage3 from '../../assets/images/blog3.svg'
 import blogImage4 from '../../assets/images/blog4.svg'
 import './styles.sass'
+import Subscription from '../../components/Subscription'
 
 const thingsToDoList = [
   {
@@ -78,6 +79,7 @@ const Home = () => {
           ))
         }
       </Blog>
+      <Subscription />
     </section>
   )
 }
