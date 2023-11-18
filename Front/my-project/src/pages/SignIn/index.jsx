@@ -37,7 +37,7 @@ const SignIn = () => {
         <button className='sign-up__form-button'>Create account</button>
       </form>
     </main>
-    <main  className='sign-up-wrapper desktop'>
+    <main  className='sign-up-wrapper sign-desktop'>
       <img 
         className='sign-up-wrapper__image-desktop' 
         src={travel} 

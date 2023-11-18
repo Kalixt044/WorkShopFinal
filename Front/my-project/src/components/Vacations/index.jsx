@@ -3,8 +3,22 @@ import back from '../../assets/images/back-btn.svg'
 import next from '../../assets/images/next-btn.svg'
 import palmers from '../../assets/icons/palmers.svg'
 import './styles.sass'
+import { useCallback, useEffect, useState } from 'react'
+import { fetchHotels } from '../../service/hotelsService'
 
 const Vacations = () => {
+  
+  const [hotels, setHotels] = useState([])
+  
+  const getHotels = useCallback(() => {
+    fetchHotels()
+    .then(response => setHotels(response))
+  }, [])
+  
+  useEffect(() => {
+    getHotels()
+  }, [getHotels])
+
   return (
     <section className='vacation'>
       <div className='info-wrapper'>
@@ -21,9 +35,14 @@ const Vacations = () => {
           </button>
       </div>
       <div className='vacation__gallery-container'>
+      {
+          hotels.map((item, index) => (
+            <VacationCard key={index} details={item} />
+          ))
+        }
+        {/* <VacationCard />
         <VacationCard />
-        <VacationCard />
-        <VacationCard />
+        <VacationCard /> */}
       </div>
     </section>
   )
