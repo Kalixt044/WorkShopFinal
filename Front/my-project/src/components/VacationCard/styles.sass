@@ -1,0 +1,57 @@
+@use '../../styles/_variables' as *
+@use '../../styles/_mixins' as *
+
+.vacation-card
+  border: 2px solid rgba(102, 102, 102, 0.08)
+  width: 200px
+  height: 200px
+  border-radius: 16px
+  font-family: $font-source-2
+  &__image
+    width: 100%
+    height: 130px
+    object-fit: cover
+    border-top-right-radius: 16px
+    border-top-left-radius: 16px
+    @media (min-width: $desktop-width)
+      height: 327px
+      border-radius: 16px
+  &__body
+    height: 70px
+    padding: 10px 15px
+    display: grid
+    .trip img, .rank img
+      width: 16px
+      height: 16px
+    .trip span
+      font-size: 1.4rem
+      color: $paragraph-color
+      @media (min-width: $desktop-width)
+        font-size: 1.6rem
+    .rank
+      width: 40px
+      &__span
+        font-size: 1.4rem
+        color: $paragraph-color
+        @media (min-width: $desktop-width)
+          font-size: 1.6rem
+    &--title 
+      font-size: 1.4rem
+      overflow: hidden
+      text-overflow: ellipsis
+      max-width: 100px
+      white-space: nowrap
+      @media (min-width: $desktop-width)
+        font-size: 2.4rem
+        max-width: 250px
+    &--text
+      font-size: 1.5rem
+      font-weight: $bold-weight
+      color: $secondary-color-orange
+      @media (min-width: $desktop-width)
+        font-size: 2.4rem
+    @media (min-width: $desktop-width)
+      height: 120px
+  @media (min-width: $desktop-width)
+    width: 369px
+    height: 447px

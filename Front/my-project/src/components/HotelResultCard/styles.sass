@@ -1,0 +1,73 @@
+@use '../../styles/_variables' as *
+@use '../../styles/_mixins' as *
+
+.hotel-card
+  width: 100%
+  height: 200px
+  background-color: $bg-color
+  display: grid
+  grid-template-columns: 1fr 2fr
+  border-radius: 8px
+  &__image-container
+    width: 150px
+    height: 200px
+    &--image
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 8px
+  &__information
+    width: 100%
+    height: 100%
+    padding: 10px
+    display: grid
+    align-content: space-between
+    &--name-rank
+      width: 100%
+      display: grid
+      gap: 7px
+      .name
+        font-size: 2rem
+        font-weight: $bold-weight
+        color: $primary-color-black
+      .rank
+        width: 100%
+        display: flex
+        align-items: center
+        gap: 5px
+        &__icon
+          width: 15px
+          height: 15px
+        &__number
+          font-size: 1.5rem
+          font-weight: $semibold-weight
+        &__description
+          font-size: 1.5rem
+          font-weight: $medium-weight
+          color: $paragraph-color
+      .location
+        width: 100%
+        display: flex
+        align-items: center
+        gap: 10px
+        &__icon
+          width: 20px
+          height: 15px
+        &__city
+          font-size: 1.5rem
+          font-weight: $medium-weight
+          color: $paragraph-color
+    &--price-guest  
+      justify-self: end
+      display: grid
+      gap: 7px
+      .guest
+        font-size: 1.6rem
+        color: $paragraph-color
+      .price
+        font-size: 2rem
+        font-weight: $bold-weight
+        color: $secondary-color-orange
+        justify-self: end
+  @media  (min-width: $tablet-width)
+    width: 435px

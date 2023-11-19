@@ -1,0 +1,141 @@
+@use '../../styles/_variables' as *
+@use '../../styles/_mixins' as *
+
+.hero
+  width: 100%
+  height: auto
+  margin-bottom: 20px
+  display: grid
+  gap: 30px
+  &__banner
+    min-width: $mobile-width
+    width: 450px
+    height: 530px
+    margin: 0 auto
+    &--image
+      width: 100%
+      height: 100%
+      object-fit: contain
+    @media (min-width: $desktop-width)
+      margin: 0
+  &__info
+    width: 100%
+    height: auto
+    display: grid
+    justify-items: center
+    gap: 20px
+    &--title
+      font-size: 5.8rem
+      font-weight: $bold-weight
+      line-height: 50px
+      text-align: center
+      span
+        color: $secondary-color-orange
+      @media (min-width: $desktop-width)
+        width: 500px
+        font-size: 6.4rem
+        text-align: left
+    &--text
+      font-family: $font-source-2
+      font-size: 2rem
+      font-weight: $regular-weight
+      color: $paragraph-color
+      text-align: center
+      @media (min-width: $desktop-width)
+        width: 450px
+        text-align: justify
+    &--button
+      width: 168px
+      height: 50px
+      border: 1px solid $secondary-color-orange
+      border-radius: 6px
+      font-size: 2rem
+      font-family: $font-source-2
+      color: $secondary-color-orange
+      letter-spacing: 1px
+      &:hover
+        border: none
+        color: $bg-color
+        background-color: $secondary-color-orange
+    @media (min-width: $desktop-width)
+      width: 550px
+      align-content: center
+      justify-items: flex-start
+  &__form
+    width: $mobile-width
+    height: 180px
+    padding: 0 20px
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    border-radius: 10px
+    box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06)
+    &--field-wrapper
+      flex: 1 0 120px
+      font-family: $font-source-2
+      label
+        font-size: 1.6rem
+        font-weight: $medium-weight
+        color: $primary-color-black
+        span
+          color: $secondary-color-orange
+          margin-left: 5px
+      input
+        width: 100%
+        height: 30px
+        border: none
+        font-size: 1.4rem
+        &:focus
+          outline: none
+          border-width: 1px
+          border-style: solid
+          border-bottom-color: $secondary-color-orange
+          border-top-color: transparent
+          border-left-color: transparent
+          border-right-color: transparent
+    &--button
+      flex: 0 0 120px
+      height: 30px
+      border: none
+      border-radius: 5px
+      color: $bg-color
+      background-color: $secondary-color-orange
+      font-family: $font-source-2
+      font-size: 1.4rem
+      font-weight: $semibold-weight
+    @media (min-width: $desktop-width)
+      width: 841px
+      height: 114px
+      flex-wrap: nowrap
+      gap: 50px
+      &--button
+        height: 45px
+
+  @media (min-width: $desktop-width)
+    .wrapper
+      display: flex
+      flex-direction: row-reverse
+      justify-content: center
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker
+  padding: 0
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker .ant-picker-input >input
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker .ant-picker-input >input:focus
+  border-bottom-color: $secondary-color-orange
+  border-top-color: transparent
+  border-left-color: transparent
+  border-right-color: transparent
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before
+  border: 1px solid $secondary-color-orange
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker-dropdown .ant-picker-today-btn 
+  color: $secondary-color-orange
+
+.anticon
+  display: none

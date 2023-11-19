@@ -1,0 +1,93 @@
+@use '../../styles/_variables' as *
+@use '../../styles/_mixins' as *
+
+.subscription
+  width: 100%
+  height: 250px
+  background-color: $secondary-color-orange
+  position: relative
+  display: grid
+  justify-content: center
+  align-items: center
+  margin-bottom: 40px
+  &__image-palmers
+    width: 70px
+    height: 70px
+    object-fit: cover
+    position: absolute
+    top: 3px
+    right: 3px
+    @media (min-width: $desktop-width)
+      width: 112px
+      height: 112px
+  &__image-ellipse
+    width: 200px
+    height: 150px
+    object-fit: cover
+    position: absolute
+    bottom: 0
+    z-index: 0
+    @media (min-width: $desktop-width)
+      width: 361px
+      height: 280px
+  &__form
+    width: 380px
+    height: auto
+    display: grid
+    gap: 30px
+    &--title
+      font-size: 3rem
+      font-weight: $bold-weight
+      line-height: normal
+      text-align: center
+      color: #FFFFFF
+      @media (min-width: $desktop-width)
+        font-size: 4.8rem
+        width: 654px
+    &--wrapper
+      width: 100%
+      height: 40px
+      background-color: #FFFFFF
+      border-radius: 7px
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      gap: 10px
+      padding: 10px 5px
+      z-index: 2
+      .label
+        font-size: 1.6rem
+        color: #999999
+        margin-left: 5px
+        @media (min-width: $desktop-width)
+          font-size: 2rem
+      .input
+        width: 250px
+        height: 30px
+        font-family: $font-source-2
+        font-size: 1.5rem
+        color: #999999 
+        &:focus
+          outline: none
+        @media (min-width: $desktop-width)
+          width: 470px
+      .button
+        width: 80px
+        height: 30px
+        border-radius: 5px
+        background-color: $secondary-color-orange
+        color: #FFFFFF
+        font-size: 1.2rem
+        font-family: $font-source-2
+        @media (min-width: $desktop-width)
+          width: 132px
+          height: 40px
+          font-size: 1.6rem
+      @media (min-width: $desktop-width)
+        width: 654px
+        height: 50px
+    @media (min-width: $desktop-width)
+      width: 710px
+      justify-items: center
+  @media (min-width: $desktop-width)
+    border-radius: 16px

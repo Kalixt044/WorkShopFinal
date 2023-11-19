@@ -1,0 +1,35 @@
+@use '../../styles/_variables' as *
+@use '../../styles/_mixins' as *
+
+.blog 
+  width: 100%
+  height: auto
+  padding: 20px
+  .info-wrapper
+    @include infoWrapper(90%, 90px, 90px, -20px, -60px)
+    @media (min-width: $tablet-width)
+      @include infoWrapper(570px, 180px, 130px, -130px, -10px)
+  &__title
+    @include titleStyle
+    font-size: 4.2rem
+    margin-top: 40px
+    @media (min-width: $tablet-width)
+      @include titleStyle
+  &__text
+    @include textStyle
+    font-size: 1.6rem
+    margin-top: 20px
+    @media (min-width: $tablet-width)
+      @include textStyle
+  &__cards-container
+    width: 100%
+    height: auto
+    margin-top: 20px
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+    justify-content: center
+    justify-items: center
+    gap: 20px
+    @media (min-width: $tablet-width)
+      margin: 40px 0
+      display: flex
