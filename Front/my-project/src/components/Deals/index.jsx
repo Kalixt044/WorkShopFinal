@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { fetchHotels } from '../../service/hotelsService'
+import { fetchHotelsByParams } from '../../service/hotelsService'
 import DealCard from '../DealCard'
 import back from '../../assets/images/back-btn.svg'
 import next from '../../assets/images/next-btn.svg'
@@ -48,14 +48,13 @@ const Deals = () => {
   const [hotels, setHotels] = useState([])
   
   const getHotels = useCallback(() => {
-    fetchHotels()
+    fetchHotelsByParams({ limit: 3 })
     .then(response => setHotels(response))
   }, [])
   
   useEffect(() => {
     getHotels()
   }, [getHotels])
-
   return (
     <section className='deals-discount'>
       <h2 className='deals-discount__title'>Exclusive <span>deals & discounts</span></h2>

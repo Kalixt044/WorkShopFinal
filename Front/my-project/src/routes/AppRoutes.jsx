@@ -9,9 +9,9 @@ const AppRoutes = () => {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />}/>
+        <Route path='login' element={<SignIn />} />
+        <Route path='register' element={<SignUp />} />
       </Route>
-      <Route path='login' element={<SignIn />} />
-      <Route path='register' element={<SignUp />} />
     </Routes>
   )
 }

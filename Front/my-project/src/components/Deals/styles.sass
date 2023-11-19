@@ -7,10 +7,14 @@
   display: grid
   place-content: center
   &__title
+    width: 350px
     @include titleStyle
+    justify-self: center
     font-size: 4.2rem
+    line-height: 40px
     margin-top: 40px
     @media (min-width: $tablet-width)
+      width: 550px
       @include titleStyle
   &__text
     @include textStyle
@@ -34,3 +38,5 @@
   &__buttons-container
     width: 100px
     margin: 0 auto
+  @media (min-width: $desktop-width)
+    gap: 10px

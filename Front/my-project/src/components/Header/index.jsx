@@ -19,7 +19,7 @@ const Header = () => {
 
   return (<>
     <header className='header mobile w-full flex justify-between items-center'>
-      <div className='header__logo-container flex'>
+      <div className='header__logo-container flex cursor-pointer' onClick={() => navigate('/')}>
         <h3 className='header__logo-container--title'>Trabook</h3>
         <img className='header__logo-container--image' src={logo} alt='logo icon' />
       </div>

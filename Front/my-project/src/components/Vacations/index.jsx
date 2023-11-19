@@ -4,14 +4,14 @@ import next from '../../assets/images/next-btn.svg'
 import palmers from '../../assets/icons/palmers.svg'
 import './styles.sass'
 import { useCallback, useEffect, useState } from 'react'
-import { fetchHotels } from '../../service/hotelsService'
+import { fetchHotelsByParams } from '../../service/hotelsService'
 
 const Vacations = () => {
   
   const [hotels, setHotels] = useState([])
   
   const getHotels = useCallback(() => {
-    fetchHotels()
+    fetchHotelsByParams({ limit: 6 })
     .then(response => setHotels(response))
   }, [])
   

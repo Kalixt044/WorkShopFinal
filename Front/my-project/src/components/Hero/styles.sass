@@ -119,3 +119,23 @@
       display: flex
       flex-direction: row-reverse
       justify-content: center
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker
+  padding: 0
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker .ant-picker-input >input
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker .ant-picker-input >input:focus
+  border-bottom-color: $secondary-color-orange
+  border-top-color: transparent
+  border-left-color: transparent
+  border-right-color: transparent
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before
+  border: 1px solid $secondary-color-orange
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-picker-dropdown .ant-picker-today-btn 
+  color: $secondary-color-orange
+
+.anticon
+  display: none
