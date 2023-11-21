@@ -62,4 +62,4 @@ http
 | `email` | `string` | *Yes*. |
 
 This EndPoint is used to know if alrady exist a user whit the email.
-### Deploy Vercel: https://work-shop-final-peaku-f32a3b62s-kalixt044.vercel.app/
+### Deploy Vercel: https://work-shop-final-peaku.vercel.app/
